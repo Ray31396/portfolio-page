@@ -1,0 +1,27 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+
+.banner___left {
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-color: yellow;
+}
+
+.banner img {
+    position: absolute;
+    width: 50%;
+    filter: brightness(0.5);
+    bottom: 0;
+    right: 0;
+}
