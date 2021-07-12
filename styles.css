@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 *, *::before, *::after {
     margin: 0;
@@ -18,26 +19,51 @@
     background-color: black;
     color: white;
     font-family: "Rock Salt", sans-serif;
-    font-size: clamp(3em, 15vw, 8em);
+    font-size: clamp(3em, 15vw, 9vh);
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .hero___text {
     position: relative;
 }
 
+.nav {
+    position:absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+    top: 0.25em;
+    left: 0.25em;
+}
 
-/* 
-.banner___image {
-    background-image: url("/images/placeholder.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    clip-path: circle(35%);
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    z-index: 0;
-} */
+.nav___hamburger {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color:red;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.nav___hamburger::before, .nav___hamburger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color:red;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.nav___hamburger::before {
+    top: 5px;
+}
+
+.nav___hamburger::after {
+    top: -5px;
+}
