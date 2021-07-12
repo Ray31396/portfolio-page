@@ -14,66 +14,93 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 100vw;
-    max-height: 40vh;
+    height: 350px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    user-select: none;
 }
 
 .hero___text {
     position: relative;
+    width: 100%;
+    text-align: center;
     color: white;
     font-family: "Rock Salt", sans-serif;
-    font-size: clamp(3em, 15vw, 9vh);
+    font-size: clamp(1em, 10vw, 8em);
+    user-select: none;
+    pointer-events: none;
 }
 
 .nav {
-    position:absolute;
+    position: absolute;
     cursor: pointer;
+    top: 1em;
+    left: 1em;
     width: 40px;
-    height: 20px;
-    padding-top: 10px;
-    padding-left: 5px;
-    top: 0.25em;
-    left: 0.25em;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav___hamburger {
     position: absolute;
+    cursor: pointer;
+    display: block;
+    pointer-events: none;
+}
+
+.nav___hamburger-line {
+    display: block;
     width: 30px;
-    height: 2px;
-    background-color:red;
-    font-size: 2em;
-    font-weight: 400;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    opacity: 1;
+    transition: 0.3s all;
+    pointer-events: none;
 }
 
-.nav___hamburger::before, .nav___hamburger::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color:red;
-    font-size: 2em;
-    font-weight: 400;
+.line-1 {
+    transform: translateY(9px)rotate(45deg);
+    transition: 0.3s all;
 }
 
-.nav___hamburger::before {
-    top: 5px;
+.line-2 {
+    opacity: 0;
+    transition: 0.3s all;
 }
 
-.nav___hamburger::after {
-    top: -5px;
+.line-3 {
+    transform: translateY(-9px) rotate(-45deg);
+    transition: 0.3s all;
+}
+
+.hideItems {
+    visibility: hidden;
 }
 
 .nav___items {
-    visibility: hidden;
+    position: absolute;
+    font-size: clamp(0.75em, 10vw, 1em);
+    font-family: "Raleway", sans-serif;
+    width: max-content;
+    list-style: none;
+    cursor: default;
     color: white;
+    top: 2.5em;
+    left: 0em;
+    padding: 3px;
+    text-transform: uppercase;
+
 }
 
+.nav___items a:link, .nav___items a:visited {
+    color: white;
+    text-decoration: none;
+}
 
-.nav:active .nav___items {
-    visibility: visible;
+.nav___items li + li {
+    margin: 1em 0;
 }
