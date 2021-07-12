@@ -1,27 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.banner {
+:root {
+    --accent:rgb(188, 253, 7);
+}
+
+.hero {
+    position: relative;
     width: 100%;
+    height: 100vw;
+    max-height: 40vh;
     background-color: black;
-    height: 100vh;
     color: white;
+    font-family: "Rock Salt", sans-serif;
+    font-size: clamp(3em, 15vw, 8em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero___text {
+    position: relative;
 }
 
 
-.banner___left {
-    width: 20px;
-    aspect-ratio: 1/1;
-    background-color: yellow;
-}
-
-.banner img {
-    position: absolute;
-    width: 50%;
-    filter: brightness(0.5);
-    bottom: 0;
-    right: 0;
-}
+/* 
+.banner___image {
+    background-image: url("/images/placeholder.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: circle(35%);
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: 0;
+} */
