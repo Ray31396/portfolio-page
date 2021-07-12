@@ -17,9 +17,6 @@
     height: 100vw;
     max-height: 40vh;
     background-color: black;
-    color: white;
-    font-family: "Rock Salt", sans-serif;
-    font-size: clamp(3em, 15vw, 9vh);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +25,9 @@
 
 .hero___text {
     position: relative;
+    color: white;
+    font-family: "Rock Salt", sans-serif;
+    font-size: clamp(3em, 15vw, 9vh);
 }
 
 .nav {
@@ -66,4 +66,14 @@
 
 .nav___hamburger::after {
     top: -5px;
+}
+
+.nav___items {
+    visibility: hidden;
+    color: white;
+}
+
+
+.nav:active .nav___items {
+    visibility: visible;
 }
