@@ -11,6 +11,10 @@
     --accent:rgb(188, 253, 7);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -38,29 +42,39 @@
 .nav {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     bottom: 0;
     background-color: black;
     border-top: solid 1px rgba(0, 0, 0, 0.5);
-    
-
-
-
 }
 
 .nav___item {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.nav i {
-    font-size: 2em;
-    text-align: center;
+.nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav a:visited, .nav a:link {
     color: white;
-    
+    text-decoration: none;
+}
+
+
+.nav___item i {
+    font-size: 2em;
+}
+
+.nav___item h3 {
+    font-size: 1em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 /* ! The styles below are for the hamburger nav */ 
@@ -143,7 +157,11 @@
     margin: 1em 0;
 }  */
 
-.home h2 {
+.about {
+    height: 200vh;
+}
+
+.about h2 {
     text-align: center;
     margin-top: 1em;
     font-family: "Raleway", Arial, Helvetica, sans-serif  ;
