@@ -270,7 +270,7 @@ label {
 label:after {
 	content: '';
 	position: absolute;
-	top: 2.5px;
+	top: 2.3px;
 	left: 2px;
 	width: clamp(1em, 2.75vw, 1.5em);
 	height: clamp(1em, 2.75vw, 1.5em);
@@ -289,7 +289,8 @@ input:checked + label:after {
 }
 
 label:active:after {
-	width: 65px;
+	/* width: 65px; */
+    width:clamp(1.3em, 3vw, 1.8em)
 }
 
 .resume {
