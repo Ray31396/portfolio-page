@@ -270,7 +270,7 @@ label {
 label:after {
 	content: '';
 	position: absolute;
-	top: 2.3px;
+	top: 2px;
 	left: 2px;
 	width: clamp(1em, 2.75vw, 1.5em);
 	height: clamp(1em, 2.75vw, 1.5em);
