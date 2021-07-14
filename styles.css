@@ -218,7 +218,6 @@ html {
     justify-content: space-evenly;
     flex-direction: column;
     padding: 0.25em;
-
 }
 
 .card___body-top i {
@@ -253,7 +252,6 @@ html {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: clamp(0.75em, 3.5vw, 3.25em);
     font-weight: 300;
-
 }
 
 .resume {
