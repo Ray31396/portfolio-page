@@ -1,4 +1,4 @@
-import { fullAbout, tldrAbout } from "/about_txt.js";
+import { fullAbout, tldrAbout } from "./about_txt.js";
 const smileIcon = document.querySelector(".fa-smile-beam");
 const smileA = document.querySelector(".smile");
 const togLabel = document.querySelector(".switch");
