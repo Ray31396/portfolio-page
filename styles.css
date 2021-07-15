@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --accent: rgb(144, 1,1 );
+    --neutral: rgb(245, 245, 220);
 }
 
 html {
@@ -29,8 +34,11 @@ body {
     position: relative;
     width: 100%;
     text-align: center;
-    color: white;
+    color: var(--neutral);
     font-size: clamp(1em, 10vw, 8em);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     pointer-events: none;
 }
@@ -38,8 +46,6 @@ body {
 .hero___text h1 {
     font-family: "Rock Salt", sans-serif;
 }
-
-/*! The styles below are for the fixed-at-bottom nav */
 
 .nav {
     position: fixed;
@@ -70,94 +76,15 @@ body {
     text-decoration: none;
 }
 
-
 .nav___item i {
     font-size: 2em;
+    color: var(--accent);
+
 }
 
 .nav___item h4 {
     font-size: 1em;
 }
-
-/* ! The styles below are for the hamburger nav */ 
-
-/* .nav {
-    position: absolute;
-    cursor: pointer;
-    top: 1em;
-    left: 1em;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav___hamburger {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    pointer-events: none;
-}
-
-.nav___hamburger-line {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    opacity: 1;
-    transition: 0.3s all;
-    pointer-events: none;
-}
-
-.line-1 {
-    transform: translateX(9px) translateY(9px) rotate(90deg);
-    transition: 0.3s all;
-}
-
-.line-2 {
-    opacity: 0;
-    transform: rotate(90deg);
-    transition: 0.3s all;
-}
-
-.line-3 {
-    transform: translateX(-9px) translateY(-9px) rotate(90deg);
-    transition: 0.3s all;
-}
-
-
-.nav___items {
-    position: absolute;
-    font-size: clamp(0.75em, 10vw, 1em);
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    width: max-content;
-    list-style: none;
-    cursor: default;
-    color: white;
-    top: 2.5em;
-    left: 0em;
-    padding: 3px;
-    text-transform: uppercase;
-    opacity: 1;
-    transform: translateX(0);
-    transition: 0.3s ease-in;
-}
-
-.hideItems {
-    opacity: 0;
-    left: -3em; 
-}
-
-.nav___items a:link, .nav___items a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.nav___items li + li {
-    margin: 1em 0;
-}  */
 
 #about, #projects, #contact {
     padding-top: 2.5%;
@@ -166,10 +93,14 @@ body {
 .card {
     width: 95%;
     margin: auto;
-    background-color: beige;
-    border-radius: 0.5em;
+    background-color: var(--neutral);
     box-shadow: 0 4px 0.5em rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
 }
 
 .card___head {
@@ -179,35 +110,15 @@ body {
     font-size: clamp(1em, 3vw, 1.5em);
     padding: 0.5em;
     text-transform: lowercase;
-    letter-spacing: 3px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* 
-.about___card-photo::after {
-    content: 'I guess my face \A goes here?';
-    white-space: pre;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    font-size: clamp(0.5em, 3vw, 2em);
-} */
-/* 
-.about___card-photo img {
-    width: 50%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid black;
-    filter: brightness(0);
-} */
+.card___head h2 {
+    letter-spacing: 3px;
+    
+}
 
 .card___body {
     padding: 0 0.25em;
@@ -235,9 +146,10 @@ body {
 .card___body-top h4 {
     font-size: clamp(0.75em, 3.5vw, 3.25em);
     font-style: italic;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
+    color: var(--accent);
 }
 
 .card___body-bottom {
@@ -247,56 +159,130 @@ body {
     max-width: 50ch;
     line-height: 1.5em;
     font-size: clamp(0.75em, 3.5vw, 3.25em);
-    font-weight: 300;
+    font-weight: 400;
 }
 
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+.anim {
+    animation: fadeIn 0.3s ease-in;
+    -webkit-animation: fadeIn 0.3s ease-in;
 }
 
-label {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.switch {
 	cursor: pointer;
-	text-indent: -9999px;
-	width:clamp(3em, 6vw, 3em);;
-	height: clamp(1.2em, 3.2vw, 1.6em);;
+	width: clamp(3.3em, 6vw, 3.9em);
+    height: clamp(1.1em, 2vw, 1.3em);
 	background: white;
 	display: block;
-	border-radius: 100px;
 	position: relative;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
 }
 
-label:after {
-	content: '';
-	position: absolute;
-	top: 2.3px;
-	left: 2px;
-	width: clamp(1em, 2.75vw, 1.5em);
-	height: clamp(1em, 2.75vw, 1.5em);
-	background: black;
-	border-radius: 90px;
-	transition: 0.3s;
+.switch input {
+    display: none;
 }
 
-input:checked + label {
-	/* background: gray; */
+.slider {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    pointer-events: none;
 }
 
-input:checked + label:after {
-	left: calc(100% - 2.55px);
-	transform: translateX(-100%);
+.slider:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: clamp(0.9em, 1.7vw, 1.4em);
+    height: clamp(0.9em, 1.7vw, 1.4em);
+    background: var(--accent);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
-label:active:after {
-	/* width: 65px; */
-    width:clamp(1.3em, 3vw, 1.8em)
+.slider:active::before {
+    width: clamp(1.15em, 2.5vw, 1.45em);
 }
 
-.resume {
-    height: 200vh;
+input:checked + .slider:before {
+    left: calc(100% - 3px);
+    transform: translate(-100%, -50%);
+    -moz-transform: translate(-100%, -50%);
+    -o-transform: translate(-100%, -50%);
+    -webkit-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+}
+
+.tldr, .full {
+    color: black;
+    position: absolute;
+    top: 50%;
+    transition: opacity 0.4s ease-in;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+}
+
+.full {
+    left: 75%;
+    transform: translate(-75%, -50%);
+    -webkit-transform: translate(-75%, -50%);
+    -moz-transform: translate(-75%, -50%);
+    -ms-transform: translate(-75%, -50%);
+    -o-transform: translate(-75%, -50%);
+    opacity: 1;
+
+}
+
+.tldr {
+    opacity: 0;
+    visibility: hidden;
+    left: 25%;
+    transform: translate(-25%, -50%);
+    -webkit-transform: translate(-25%, -50%);
+    -moz-transform: translate(-25%, -50%);
+    -ms-transform: translate(-25%, -50%);
+    -o-transform: translate(-25%, -50%);
+}
+
+input:checked + .slider .tldr {
+    visibility: visible;
+    opacity: 1;
+}
+
+input:checked + .slider .full {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .contact {
-    height: 200vh;
+    margin-bottom: 85px;
 }

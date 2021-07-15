@@ -1,22 +1,13 @@
-//! This is the hamburger menu stuff//
-
-// const nav = document.querySelector(".nav");
-// const navHamburger = document.querySelector(".nav___hamburger");
-// const hamburgerLines = document.getElementsByClassName("nav___hamburger-line");
-// const navItems = document.querySelector(".nav___items");
-
-// document.addEventListener("click", (e) => {
-//   if (e.target === nav) {
-//     nav.ariaPressed = nav.ariaPressed === "false" ? "true" : "false";
-//     navItems.classList.toggle("hideItems");
-//     Array.from(hamburgerLines).forEach((line, x) => {
-//       line.classList.toggle(`line-${x + 1}`);
-//     });
-//   }
-// });
-
+import { fullAbout, tldrAbout } from "/about_txt.js";
 const smileIcon = document.querySelector(".fa-smile-beam");
 const smileA = document.querySelector(".smile");
+const togLabel = document.querySelector(".switch");
+const togBtn = document.querySelector("#togBtn");
+const aboutText = document.getElementsByClassName("card___body-bottom")[0];
+
+window.onload = (event) => {
+  aboutText.innerHTML = fullAbout;
+};
 
 smileA.addEventListener("pointerover", () => {
   smileIcon.classList.replace("fa-smile-beam", "fa-grimace");
@@ -25,3 +16,19 @@ smileA.addEventListener("pointerover", () => {
 smileA.addEventListener("pointerout", () => {
   smileIcon.classList.replace("fa-grimace", "fa-smile-beam");
 });
+
+togLabel.addEventListener(
+  "pointerup",
+  (e) => {
+    e.preventDefault();
+    aboutText.classList.remove("anim");
+    void aboutText.offsetWidth;
+    aboutText.classList.add("anim");
+    if (togBtn.checked) {
+      aboutText.innerHTML = fullAbout;
+    } else {
+      aboutText.innerHTML = tldrAbout;
+    }
+  },
+  false
+);
