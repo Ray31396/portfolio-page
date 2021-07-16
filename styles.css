@@ -297,3 +297,12 @@ input:checked + .slider .full {
 .contact {
     margin-bottom: 85px;
 }
+
+@media (prefers-reduced-motion) {
+    @keyframes fadeIn {
+        from {
+            opacity: 1;
+        }
+    }
+    
+}
