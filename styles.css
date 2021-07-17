@@ -132,7 +132,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    padding: 0.25em;
 }
 
 .card___body-top i {
@@ -166,8 +165,6 @@ body {
 
 .card___body-bottom {
     display: block;
-    padding: 0 0.5em 0.5em;
-    margin: 0 auto;
     max-width: 50ch;
     line-height: 1.5em;
     font-size: clamp(0.75em, 3vw, 2em);
