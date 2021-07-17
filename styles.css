@@ -253,8 +253,10 @@ body {
     -o-transform: translateY(-50%);
 }
 
-.slider:active::before {
-    width: clamp(1.15em, 2.5vw, 1.45em);
+@media (pointer: fine) {
+    .slider:active::before {
+        width: clamp(1.15em, 2.5vw, 1.45em);
+    }
 }
 
 input:checked + .slider::before {
