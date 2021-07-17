@@ -8,8 +8,9 @@ const aboutBody = document.getElementsByClassName("card___body")[0];
 const aboutHead = document.querySelector(".card___body-top-text");
 const aboutText = document.getElementsByClassName("card___body-bottom")[0];
 const aboutImg = document.querySelector(".card___image");
+const currentlyChecked = togBtn.checked;
 
-console.log(aboutHead);
+console.log(togBtn.checked);
 
 window.onload = (event) => {
   aboutText.innerHTML = fullAbout;
@@ -30,6 +31,10 @@ togLabel.addEventListener(
     aboutBody.classList.remove("anim");
     void aboutBody.offsetWidth;
     aboutBody.classList.add("anim");
+    if (togBtn.checked === currentlyChecked) {
+      break
+    }
+    currentlyChecked = togBtn.checked;
     if (togBtn.checked) {
       aboutText.innerHTML = fullAbout;
       aboutText.style.margin = "0 auto";
