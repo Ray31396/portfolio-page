@@ -1,16 +1,13 @@
 import { fullAbout, tldrAbout } from "./about_txt.js";
 const smileIcon = document.querySelector(".fa-smile-beam");
 const smileA = document.querySelector(".smile");
-const togLabel = document.querySelector(".switch");
-const togSlider = document.querySelector(".slider");
-const togBtn = document.querySelector("#togBtn");
-const aboutBody = document.getElementsByClassName("card___body")[0];
 const aboutHead = document.querySelector(".card___body-top-text");
+const aboutBody = document.getElementsByClassName("card___body")[0];
 const aboutText = document.getElementsByClassName("card___body-bottom")[0];
 const aboutImg = document.querySelector(".card___image");
-let currentlyChecked = !togBtn.checked;
-
-console.log(togBtn.checked);
+const slider = document.querySelector(".slider");
+const sliderBall = document.querySelector(".slider___ball");
+const sliderText = document.querySelector(".slider___text");
 
 window.onload = (event) => {
   aboutText.innerHTML = fullAbout;
@@ -24,30 +21,33 @@ smileA.addEventListener("pointerout", () => {
   smileIcon.classList.replace("fa-grimace", "fa-smile-beam");
 });
 
-togLabel.addEventListener(
+slider.addEventListener(
   "pointerup",
   (e) => {
-    if (togBtn.checked === currentlyChecked) {
-      return;
-    }
     e.preventDefault();
     aboutBody.classList.remove("anim");
     void aboutBody.offsetWidth;
     aboutBody.classList.add("anim");
-    currentlyChecked = togBtn.checked;
-    if (togBtn.checked) {
+    sliderBall.classList.toggle("slide");
+    sliderText.classList.toggle("to-right");
+    sliderText.classList.remove("anim");
+    void aboutBody.offsetWidth;
+    sliderText.classList.add("anim");
+    if (!sliderBall.classList.contains("slide")) {
+      sliderText.innerHTML = "full";
       aboutText.innerHTML = fullAbout;
-      aboutText.style.margin = "0 auto";
+      aboutText.style.setProperty("margin", "0 auto");
       aboutImg.classList.remove("hide");
       aboutHead.querySelectorAll(":scope > *").forEach((element) => {
-        element.style.textAlign = "center";
+        element.style.setProperty("text-align", "center");
       });
     } else {
+      sliderText.innerHTML = "tldr";
       aboutText.innerHTML = tldrAbout;
-      aboutText.style.margin = "unset";
+      aboutText.style.setProperty("margin", "unset");
       aboutImg.classList.add("hide");
       aboutHead.querySelectorAll(":scope > *").forEach((element) => {
-        element.style.textAlign = "left";
+        element.style.setProperty("text-align", "left");
       });
     }
   },

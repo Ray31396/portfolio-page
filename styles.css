@@ -182,8 +182,6 @@ body {
     font-weight: 400;
 }
 
-
-
 .anim {
     animation: fadeIn 0.3s ease-in;
     -webkit-animation: fadeIn 0.3s ease-in;
@@ -198,7 +196,7 @@ body {
     }
 }
 
-.switch {
+.slider {
 	cursor: pointer;
 	width: clamp(3.3em, 6vw, 3.9em);
     height: clamp(1.1em, 2vw, 1.3em);
@@ -212,24 +210,7 @@ body {
 	-o-border-radius: 100px;
 }
 
-.switch input {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    inset: 0;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    /* pointer-events: none; */
-}
-
-.slider::before {
-    content: '';
+.slider___ball {
     position: absolute;
     top: 50%;
     left: 3px;
@@ -254,12 +235,12 @@ body {
 }
 
 @media (pointer: fine) {
-    .slider:active::before {
+    .slider:active .slider___ball {
         width: clamp(1.15em, 2.5vw, 1.45em);
     }
 }
 
-input:checked + .slider::before {
+.slide {
     left: calc(100% - 3px);
     transform: translate(-100%, -50%);
     -moz-transform: translate(-100%, -50%);
@@ -268,7 +249,7 @@ input:checked + .slider::before {
     -ms-transform: translate(-100%, -50%);
 }
 
-.tldr, .full {
+.slider___text {
     color: black;
     position: absolute;
     top: 50%;
@@ -279,7 +260,7 @@ input:checked + .slider::before {
     -o-transition: opacity 0.4s ease-in;
 }
 
-.full {
+.slider___text {
     left: 75%;
     transform: translate(-75%, -50%);
     -webkit-transform: translate(-75%, -50%);
@@ -287,27 +268,21 @@ input:checked + .slider::before {
     -ms-transform: translate(-75%, -50%);
     -o-transform: translate(-75%, -50%);
     opacity: 1;
+    visibility: visible;
 }
 
-.tldr {
-    opacity: 0;
-    visibility: hidden;
+.to-right {
+    color: black;
+    position: absolute;
+    top: 50%;
     left: 25%;
     transform: translate(-25%, -50%);
-    -webkit-transform: translate(-25%, -50%);
-    -moz-transform: translate(-25%, -50%);
-    -ms-transform: translate(-25%, -50%);
-    -o-transform: translate(-25%, -50%);
-}
 
-input:checked + .slider .tldr {
-    visibility: visible;
-    opacity: 1;
-}
-
-input:checked + .slider .full {
-    visibility: hidden;
-    opacity: 0;
+    /* transform: translate(-50%, -50%); */
+    /* -moz-transform: translate(-100%, -50%); */
+    /* -o-transform: translate(-100%, -50%); */
+    /* -webkit-transform: translate(-100%, -50%); */
+    /* -ms-transform: translate(-100%, -50%); */
 }
 
 .contact {
