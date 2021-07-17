@@ -27,13 +27,13 @@ smileA.addEventListener("pointerout", () => {
 togLabel.addEventListener(
   "pointerup",
   (e) => {
+    if (togBtn.checked === currentlyChecked) {
+      break
+    }
     e.preventDefault();
     aboutBody.classList.remove("anim");
     void aboutBody.offsetWidth;
     aboutBody.classList.add("anim");
-    if (togBtn.checked === currentlyChecked) {
-      break
-    }
     currentlyChecked = togBtn.checked;
     if (togBtn.checked) {
       aboutText.innerHTML = fullAbout;
