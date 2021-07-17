@@ -8,7 +8,7 @@ const aboutBody = document.getElementsByClassName("card___body")[0];
 const aboutHead = document.querySelector(".card___body-top-text");
 const aboutText = document.getElementsByClassName("card___body-bottom")[0];
 const aboutImg = document.querySelector(".card___image");
-const currentlyChecked = togBtn.checked;
+let currentlyChecked = !togBtn.checked;
 
 console.log(togBtn.checked);
 
@@ -28,7 +28,7 @@ togLabel.addEventListener(
   "pointerup",
   (e) => {
     if (togBtn.checked === currentlyChecked) {
-      break
+      return;
     }
     e.preventDefault();
     aboutBody.classList.remove("anim");
