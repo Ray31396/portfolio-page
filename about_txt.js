@@ -31,8 +31,8 @@ export const fullAbout =
   // "things up. I enjoyed my time in the field and learned many great skills " +
   // "that I hope to use in my next role. , but I feel like I've seen " +
   // "it all and done it all, and I would love a new challenge and a fresh start. " +
-  "<p>Thank you so much for stopping by and be sure to take a look at what I have been " +
-  "working on in the section below. </p><br/> <p><span class='sig'>-RG</span></p>  ";
+  "<p>Thank you so much for stopping by and be sure to take a look at what I have " +
+  "been working on in the section below. </p><br/> <p><span class='sig'>-RG</span></p>";
 
 export const tldrAbout =
   "<h3>Education</h3>" +
@@ -46,7 +46,9 @@ export const tldrAbout =
   "<ul><li><span class='emph'>High School Math Teacher (2020-2021)</span><br/> " +
   "Courses taught: Calculus, Precalculus, Geometry </li>" +
   "<li><span class='emph'>Middle School Math Teacher (2018-2020)</span><br/> " +
-  "Course taught: Common Core 8th Grade </li>";
+  "Course taught: Common Core 8th Grade </li></ul>" +
+  "<h3>Relevant Skills</h3>" +
+  "";
 
 //Where you started, what you majored in, your first career, your self-taught journey,
 //and what you hope to get out of your next role

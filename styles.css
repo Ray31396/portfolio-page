@@ -194,8 +194,8 @@ body {
     position: absolute;
     top: 50%;
     left: 3px;
-    width: clamp(0.9em, 1.7vw, 1.4em);
-    height: clamp(0.9em, 1.7vw, 1.4em);
+    width: clamp(0.9em, 1.6vw, 1.4em);
+    height: clamp(0.9em, 1.6vw, 1.4em);
     background: var(--accent);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -232,16 +232,13 @@ body {
 .slider___text {
     position: absolute;
     top: 50%;
+    left: 75%;
     color: black;
     transition: opacity 0.4s ease-in;
     -webkit-transition: opacity 0.4s ease-in;
     -moz-transition: opacity 0.4s ease-in;
     -ms-transition: opacity 0.4s ease-in;
     -o-transition: opacity 0.4s ease-in;
-}
-
-.slider___text {
-    left: 75%;
     transform: translate(-75%, -50%);
     -webkit-transform: translate(-75%, -50%);
     -moz-transform: translate(-75%, -50%);
@@ -265,14 +262,13 @@ body {
     width: fit-content;
 }
 
-.card___body-bottom p {
+.card___body-bottom p, .card___body-bottom ul {
     display: block;
     max-width: 56ch;
     line-height: 1.5em;
-    font-size: clamp(1em, 1.5vw, 1.25em);
+    font-size: clamp(1em, 2.25vw, 1.25em);
     font-weight: 400;
 }
-
 
 .greeting {
     font-weight: 700;
