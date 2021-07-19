@@ -1,7 +1,7 @@
 import { fullAbout, tldrAbout } from "./about_txt.js";
 const smileIcon = document.querySelector(".fa-smile-beam");
 const smileA = document.querySelector(".smile");
-const aboutHead = document.querySelector(".card___body-top-text");
+const aboutHead = document.querySelector(".about-card-head");
 const aboutBody = document.getElementsByClassName("card___body")[0];
 const aboutText = document.getElementsByClassName("card___body-bottom")[0];
 const aboutImg = document.querySelector(".card___image");
