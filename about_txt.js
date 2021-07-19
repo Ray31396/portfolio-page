@@ -7,7 +7,7 @@ export const fullAbout =
   "difficult decision of dropping CS so that I could focus on building towards a " +
   "career teaching math in my hometown. This choice left me feeling a bit empty " +
   "but having the chance to work alongside some of my past teachers while " +
-  "educating young minds in my community was an opportunity I knew I couldn't " +
+  "educating young minds in my community was an opportunity I knew I could not " +
   "pass up. So, I pursued a career in education and made a promise to myself to " +
   "continue learning code.</p><br/>" +
   "<p>And that is exactly what I did. Between all the lesson planning, " +
@@ -31,7 +31,7 @@ export const fullAbout =
   // "things up. I enjoyed my time in the field and learned many great skills " +
   // "that I hope to use in my next role. , but I feel like I've seen " +
   // "it all and done it all, and I would love a new challenge and a fresh start. " +
-  "<p>Thank you so much for stopping by and be sure to take a look at what I've been " +
+  "<p>Thank you so much for stopping by and be sure to take a look at what I have been " +
   "working on in the section below. </p><br/> <p><span class='sig'>-RG</span></p>  ";
 
 export const tldrAbout =
