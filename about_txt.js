@@ -6,20 +6,18 @@ export const fullAbout =
   "Science minor. My original plan was to major in both but I had to make the " +
   "difficult decision of dropping CS so that I could focus on building towards a " +
   "career teaching math in my hometown. This choice left me feeling a bit empty " +
-  "but having the chance to work alongside some of my past teachers while " +
-  "educating young minds in my community was an opportunity I knew I could not " +
-  "pass up. So, I pursued a career in education and made a promise to myself to " +
+  "and unsatisfied but having the chance to work alongside some of my past teachers " +
+  "while educating young minds in my community was an opportunity I knew I could " +
+  "not pass up. So, I pursued a career in education and made a promise to myself to " +
   "continue learning code.</p><br/>" +
   "<p>And that is exactly what I did. Between all the lesson planning, " +
   " grading, and periods of emotional eating, I learned code. " +
   "I started my self-taught journey with Java because that was the language " +
-  "with which I was the most familiar. I brushed myself up on loops, and " +
-  "methods, and control flow. And then I found myself unsure of where to go from " +
-  "there. I knew no one was going to hire a guy who only knew how to " +
-  "make basic console applications so, I experimented with a few other languages " +
-  "before ultimately falling in love with Javascript and its range of uses. " +
+  "with which I was the most familiar and from there, I experimented with a " +
+  "few other languages before ultimately falling in love with Javascript " +
+  "and its range of uses. " +
   "For me, Javascript was the language that made everything click and " +
-  "the difference between front-end and back-end technologies became crystal " +
+  "the differences between front-end and back-end technologies became crystal " +
   "clear.</p><br/> " +
   "<p>Once I was comfortable working with HTML, CSS, and vanilla Javascript, I " +
   "began diving into Javascript libraries and frameworks, such as React.js, " +
@@ -36,16 +34,16 @@ export const fullAbout =
 
 export const tldrAbout =
   "<h3>Education</h3>" +
-  "<ul><li><span class='emph'>Self-taught (2019-2021)</span><br/> " +
+  "<ul><li><span class='emph'>Self-taught (2019 - present)</span><br/> " +
   "Front-end technologies: HTML, CSS, Javascript, React.js <br/> " +
   "Back-end technologies: Node.js, Express.js, MongoDB <br/> " +
   "Also dabbled in: Python, SQL </li> " +
-  "<li><span class='emph'>UNC-Chapel Hill (2014-2018) </span><br/> " +
+  "<li><span class='emph'>UNC-Chapel Hill (2014 - 2018) </span><br/> " +
   "BA in Mathematics</li></ul > " +
   "<h3>Work Experience</h3>" +
-  "<ul><li><span class='emph'>High School Math Teacher (2020-2021)</span><br/> " +
+  "<ul><li><span class='emph'>High School Math Teacher (2020 - 2021)</span><br/> " +
   "Courses taught: Calculus, Precalculus, Geometry </li>" +
-  "<li><span class='emph'>Middle School Math Teacher (2018-2020)</span><br/> " +
+  "<li><span class='emph'>Middle School Math Teacher (2018 - 2020)</span><br/> " +
   "Course taught: Common Core 8th Grade </li></ul>" +
   "<h3>Relevant Skills</h3>" +
   "";
