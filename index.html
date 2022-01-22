@@ -3,39 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" description="Portfolio for Rayvon Gregory" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="viewport"
+      description="Portfolio for Rayvon Gregory"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="carousel.css" />
     <script src="https://kit.fontawesome.com/70ab68bdcb.js"></script>
-    <title>Rayvon Gregory | Dev</title>
+    <title>Rayvon Gregory | JS Dev</title>
   </head>
   <body>
+    <nav>
+      <a href="#about" class="nav___item">
+        <i class="fas fa-laugh-beam"></i>
+        <p>About Me</p>
+      </a>
+      <a href="#projects" class="nav___item">
+        <i class="fas fa-code"></i>
+        <p>Projects</p>
+      </a>
+      <a href="#contact" class="nav___item">
+        <i class="fas fa-phone"></i>
+        <p>Contact</p>
+      </a>
+    </nav>
     <section class="hero">
       <div class="hero___text">
         <h1>RG</h1>
       </div>
     </section>
-    <nav>
-      <div class="nav___item">
-        <a href="#about" class="smile"
-          ><i class="fas fa-smile-beam"></i>
-          <h4>About Me</h4></a
-        >
-      </div>
-      <div class="nav___item">
-        <a href="#projects"
-          ><i class="fas fa-file-alt"></i>
-          <h4>Projects</h4></a
-        >
-      </div>
-      <div class="nav___item">
-        <a href="#contact"
-          ><i class="fas fa-envelope"></i>
-          <h4>Contact</h4></a
-        >
-      </div>
-    </nav>
-    <section id="about">
-      <div class="card">
+    <div class="flex">
+      <section id="about" class="card">
         <div class="card___head">
           <h2>.about-me</h2>
           <div class="slider">
@@ -45,58 +44,144 @@
         </div>
         <div class="card___body">
           <div class="card___body-top">
-            <div class="card___image">
-              <i class="fas fa-user-circle"></i>
+            <img src="/images/pfp.jpg" class="card___image" />
+            <h3>Rayvon Gregory</h3>
+            <h4>Javascript Developer</h4>
+          </div>
+          <div class="card___body-bottom full">
+            <p class="greeting">Hey, thanks for checking out my page!</p>
+            <p>
+              I am a mostly
+              <span class="no-wrap">self-taught</span> developer with about
+              three years of experience writing code in various languages;
+              JavaScript being my main. I enjoy coming up with creative
+              solutions to challenging problems and I love learning new things,
+              so programming has been a major source of joy and mental
+              stimulation for me over the last couple of years. In 2022, I fully
+              intend of turning this hobby of mine into my next career.
+            </p>
+            <p>
+              I wrote my first program six years ago as an undergraduate student
+              at the University of North Carolina. While there, I took several
+              courses that covered topics such as object-oriented programming
+              (OOP), data structures and algorithms, and computer architecture.
+              After taking these courses, I wasn't fully convinced that Computer
+              Science was the path for me so I decided to step away from
+              programming so that I could focus on pursuing a career in
+              education.
+            </p>
+            <p>
+              In 2018, I accepted an offer to teach 8th grade math in my
+              hometown of Bloomfield, CT and, like any job, teaching had its ups
+              and downs. I loved sharing my knowledge with groups of curious
+              students and being someone's favorite teacher is such a huge honor
+              but after my second year in that position, it became clear to me
+              that I was not being challenged anymore and I had stopped growing
+              as a professional. So in mid-2020, I decided to resume learning
+              how to code.
+            </p>
+            <p>
+              Today, I am confident that I have the tools necessary to be
+              successful in an entry-level role. I've created a few projects
+              which you can see in the Projects section that showcase what I
+              have learned and how much I have grown in the past year.
+            </p>
+            <p>Thanks again for checking out my page!</p>
+            <p class="sig">-RG</p>
+          </div>
+          <div class="card___body-bottom tldr hide">
+            <p>
+              I did some coding in college but took a break and decided to
+              pursue a career in education instead. After three of teaching, I
+              am looking for an opportunity to work alongside brilliant
+              developers and take on some new challenges. Here's what I've been
+              up to:
+            </p>
+            <h3>Education</h3>
+            <ul>
+              <li>
+                <span class="emph">Self-taught (2020 - present)</span>
+                Front-end technologies: HTML, CSS, Javascript, React.js <br />
+                Back-end technologies: Node.js, Express.js, MongoDB, Mongoose
+                <br />
+                Also dabbled in: Python, SQL
+              </li>
+              <li>
+                <span class="emph">UNC-Chapel Hill (2014 - 2018) </span>
+                BA in Mathematics
+              </li>
+            </ul>
+            <h3>Work Experience</h3>
+            <ul>
+              <li>
+                <span class="emph">High School Math Teacher (2020 - 2021)</span
+                ><br />
+                Courses taught: Calculus, Precalculus, Geometry
+              </li>
+              <li>
+                <span class="emph"
+                  >Middle School Math Teacher (2018 - 2020)</span
+                ><br />
+                Course taught: Common Core 8th Grade
+              </li>
+            </ul>
+            <h3>Relevant Skills</h3>
+          </div>
+        </div>
+      </section>
+      <div>
+        <section id="projects" class="card">
+          <div class="card___head">
+            <h2>.projects</h2>
+            <div class="pr-nums">
+              <button id="war-btn">1</button>
+              <button id="cktl-btn">2</button>
+              <button id="mc-btn">3</button>
             </div>
-            <div class="about-card-head">
-              <h3 class="about-h3">Rayvon Gregory</h3>
-              <h4 class="about-h4">Javascript Developer</h4>
+          </div>
+          <div class="projects-flex-wrap">
+            <div id="war">
+              <iframe
+                src="https://www.youtube.com/embed/fnmHjjwaPkM"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <div class="prjct-info"></div>
+            </div>
+            <div id="cktl">
+              <iframe
+                src="https://www.youtube.com/embed/fnmHjjwaPkM"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <div class="prjct-info"></div>
+            </div>
+            <div id="mc">
+              <iframe
+                src="https://www.youtube.com/embed/fnmHjjwaPkM"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <div class="prjct-info"></div>
             </div>
           </div>
-          <div class="card___body-bottom">
+        </section>
+        <section id="contact" class="card">
+          <div class="card___head">
+            <h2>.contact-info</h2>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects"></section>
-    <div class="card">
-      <div class="card___head">
-        <h2>.projects</h2>
-      </div>
-      <div class="card___body">
-        <div class="card___body-top">
-          <i class="fas fa-file-alt"></i>
-          <div class="card___body-text">
-            <p>Project thumbnails go here with brief description, languages used, and video demo.</p>
+          <div class="card___body">
+            <h3>Email</h3>
+            <p>rayvongregory@gmail.com</p>
+            <h3>Phone</h3>
+            <p>(860) 616-8140</p>
           </div>
-        </div>
-        <div class="card___body-bottom">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, magni
-            fugiat itaque blanditiis similique est iure, et nihil consequatur,
-            non repellat saepe iste.
-          </p>
-        </div>
+        </section>
       </div>
     </div>
-    <section class="contact" id="contact">
-      <div class="card">
-        <div class="card___head">
-          <h2>.contact</h2>
-        </div>
-        <div class="card___body">
-          <div class="contact___top">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="card___body-bottom">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, magni
-              fugiat itaque blanditiis similique est iure, et nihil consequatur,
-              non repellat saepe iste.
-            </p>
-          </div>
-        </div>
-    </section>
     <script type="module" src="script.js"></script>
   </body>
 </html>

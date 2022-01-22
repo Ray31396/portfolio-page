@@ -1,0 +1,34 @@
+.pr-nums {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pr-nums button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent);
+    color: var(--neutral);
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.projects-flex-wrap {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.projects-flex-wrap > div {
+    flex-shrink: 0;
+    width: 100%;
+
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+
+}
