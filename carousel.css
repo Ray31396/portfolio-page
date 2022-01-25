@@ -27,6 +27,10 @@
     width: 100%;
 }
 
+.projects-flex-wrap > div.hide {
+    display: none;
+}
+
 .prjct-info {
     display: grid;
     max-width: 56ch;

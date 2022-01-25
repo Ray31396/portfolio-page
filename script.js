@@ -9,11 +9,16 @@ const aboutHead = document.querySelector(".card___body-top"),
 
 Array.from(document.querySelectorAll(".pr-nums button")).forEach((btn) =>
   btn.addEventListener("pointerup", (e) => {
-    console.log(btn)
     const { id } = e.target
-    document
-      .getElementById(`${id.split("-")[0]}`)
-      .scrollIntoView({ block: "nearest", inline: "nearest" })
+    document.activeElement.blur()
+    let openedProject = document.querySelector(
+      ".projects-flex-wrap > div[id]:not(div.hide)"
+    )
+    openedProject.classList.add("hide")
+    let div = document.getElementById(`${id.split("-")[0]}`)
+    if (div.classList.contains("hide")) {
+      div.classList.remove("hide")
+    }
   })
 )
 
