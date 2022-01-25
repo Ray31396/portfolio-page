@@ -4,15 +4,19 @@
     gap: 1rem;
 }
 
-.pr-nums button {
-    width: 40px;
-    height: 40px;
+.pr-nums a {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
     background-color: var(--accent);
     color: var(--neutral);
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border-radius: 50%;
     cursor: pointer;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 .projects-flex-wrap {
@@ -24,11 +28,34 @@
 .projects-flex-wrap > div {
     flex-shrink: 0;
     width: 100%;
+}
 
+.prjct-info {
+    display: grid;
+    max-width: 56ch;
+    margin: 0 auto;
+    padding: 0.5rem 1rem 2rem;
+    gap: 0.75rem;
+}
+
+.prjct-info:last-child {
+    line-height: 1.75;
+}
+
+.prjct-info a {
+    color: var(--accent);
+    font-weight: 600;
 }
 
 iframe {
     width: 100%;
     aspect-ratio: 16/9;
 
+}
+
+@media (min-width: 576px) {
+    .prjct-info {
+        padding: 1rem 1rem 2rem;
+    }
+    
 }
