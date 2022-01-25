@@ -44,6 +44,7 @@
 }
 
 .prjct-info a {
+    width: fit-content;
     color: var(--accent);
     font-weight: 600;
 }
