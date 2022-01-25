@@ -7,6 +7,16 @@ const aboutHead = document.querySelector(".card___body-top"),
   sliderBall = document.querySelector(".slider___ball"),
   sliderText = document.querySelector(".slider___text")
 
+Array.from(document.querySelectorAll(".pr-nums button")).forEach((btn) =>
+  btn.addEventListener("pointerup", (e) => {
+    console.log(btn)
+    const { id } = e.target
+    document
+      .getElementById(`${id.split("-")[0]}`)
+      .scrollIntoView({ block: "nearest", inline: "nearest" })
+  })
+)
+
 slider.addEventListener(
   "pointerup",
   (e) => {

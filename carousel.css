@@ -4,11 +4,9 @@
     gap: 1rem;
 }
 
-.pr-nums a {
+.pr-nums button {
     width: 30px;
     height: 30px;
-    display: grid;
-    place-content: center;
     background-color: var(--accent);
     color: var(--neutral);
     font-weight: 600;
@@ -16,7 +14,6 @@
     border-radius: 50%;
     cursor: pointer;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    text-decoration: none;
 }
 
 .projects-flex-wrap {
