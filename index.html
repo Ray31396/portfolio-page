@@ -9,37 +9,29 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="cards.css" />
-    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/70ab68bdcb.js"></script>
     <title>Rayvon Gregory | JS Dev</title>
   </head>
   <body>
     <nav>
-      <a href="#about" class="nav___item">
-        <i class="fas fa-smile-beam"></i>
-        <p>About Me</p>
-      </a>
-      <a href="#projects" class="nav___item">
-        <i class="fas fa-code"></i>
-        <p>Projects</p>
-      </a>
-      <a href="#contact" class="nav___item">
-        <i class="fas fa-envelope"></i>
-        <p>Contact</p>
-      </a>
+      <a href="#about">Me</a>
+      <a href="#projects">My Work</a>
+      <a href="#contact">My Info</a>
     </nav>
     <section class="hero">
       <div class="hero___text">
         <h1>RG</h1>
         <a href="/RAYVON_GREGORY_DEV_RESUME.pdf" download="resume"
-          >Download Resume <i class="fas fa-download"></i
-        ></a>
+          >Download Resume
+        </a>
       </div>
     </section>
     <div class="flex">
       <section id="about" class="card">
         <div class="card___head">
-          <h2>.about-me</h2>
+          <h2>Me</h2>
           <div class="slider">
             <div class="slider___ball"></div>
             <span class="slider___text">full</span>
@@ -52,16 +44,14 @@
             <h4>Javascript Developer</h4>
           </div>
           <div class="card___body-bottom full">
-            <p class="greeting">Hey, thanks for checking out my page!</p>
             <p>
-              I am a mostly
-              <span class="no-wrap">self-taught</span> developer with about
-              three years of experience writing code in various languages;
-              JavaScript being my main. I enjoy coming up with creative
-              solutions to challenging problems and I love learning new things,
-              so programming has served as a major source of joy and mental
-              stimulation for me over the last couple of years. In 2022, I fully
-              intend of turning this hobby of mine into my next career.
+              I am a
+              <span class="no-wrap">self-taught</span> developer with three
+              years of experience writing code in various languages; JavaScript
+              being my main. As someone who enjoys challenges and learning new
+              things, programming has served as a major source of joy for me
+              over the last two years. And in 2022, I fully intend on turning
+              this hobby into my next career.
             </p>
             <p>
               I wrote my first program six years ago as an undergraduate student
@@ -69,19 +59,18 @@
               courses that covered topics such as object-oriented programming
               (OOP), data structures and algorithms, and computer architecture.
               After taking these courses, I wasn't fully convinced that Computer
-              Science was the path for me so I decided to step away from
-              programming so that I could focus on pursuing a career in
-              education.
+              Science was the path for me and I pursued a career in education
+              instead.
             </p>
             <p>
               In 2018, I accepted an offer to teach 8th grade math in my
               hometown of Bloomfield, CT and, like any job, teaching had its ups
               and downs. I loved sharing my knowledge with groups of curious
-              students and being someone's favorite teacher is such a huge honor
-              but after my second year in that position, it became clear to me
-              that I was not being challenged anymore and I had stopped growing
-              as a professional. So in mid-2020, I decided to resume learning
-              how to code.
+              students and being someone's favorite teacher is such a huge
+              honor. However, after two years in that position it became clear
+              to me that I was not being challenged anymore and I had stopped
+              growing as a professional. It was this realization that made me
+              decide to resume learning how to code.
             </p>
             <p>
               Today, I am confident that I have the tools necessary to be
@@ -89,8 +78,8 @@
               which you can see in the Projects section that showcase what I
               have learned and how much I have grown in the past year.
             </p>
-            <p>Thanks again for checking out my page!</p>
-            <p class="sig">-RG</p>
+            <p>Thanks for checking out my page!</p>
+            <img src="sig.png" alt="signature" />
           </div>
           <div class="card___body-bottom tldr hide">
             <p>
@@ -125,8 +114,8 @@
             <h3>Relevant Skills</h3>
             <ul>
               <li>Proficient in HTML, CSS, and JavaScript</li>
+              <li>Proficient in Node.js and using MongoDB</li>
               <li>Proficient in responsive design</li>
-              <li>Proficient in Node.js and MongoDB/Mongoose</li>
               <li>Comfortable using React.js</li>
               <li>Familiar with Python and SQL</li>
             </ul>
@@ -136,7 +125,7 @@
       <div>
         <section id="projects" class="card">
           <div class="card___head">
-            <h2>.projects</h2>
+            <h2>My Work</h2>
             <div class="pr-nums">
               <button id="war-btn">1</button>
               <button id="cktl-btn">2</button>
@@ -152,20 +141,22 @@
                 allowfullscreen
               ></iframe>
               <div class="prjct-info">
-                <p>Name: War</p>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://war-game-react.herokuapp.com/"
-                  >Demo</a
-                >
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/rayvongregory/war-react-app"
-                  >Git Repo</a
-                >
-                <p>Tech used: HTML, CSS, React.js</p>
+                <p>War</p>
+                <p>HTML, CSS, React</p>
+                <div class="links">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://war-game-react.herokuapp.com/"
+                    >Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/rayvongregory/war-react-app"
+                    >Git Repo</a
+                  >
+                </div>
                 <p>
                   This is the first project I made and it was inspired by
                   <a
@@ -175,41 +166,37 @@
                     >whatsdev's Rock Paper Scissors tutorial</a
                   >. It started out as an ordinary HTML/CSS/JS app but I was
                   really struggling with the organization of my code. All of my
-                  styles were in the same stylesheet and all of my functions
-                  were in the same JavaScript file, so debugging this was kind
-                  of a nightmare. But when I learned about React and the idea of
+                  styles were in the same stylesheet, all of my functions were
+                  in the same JavaScript file, and debugging this was a
+                  nightmare. But when I learned about React and the idea of
                   separating code into components, I thought that converting
                   this to a React project would help me solve the problem I was
                   having. And it did for the most part. Now that I have a bit
                   more experience, I realize that I definitely could've created
                   this without React but I'm still proud of what I learned. And
-                  for my first project, I think it turned out pretty well. This
-                  was a good challenge.
+                  for my first project, I think it turned out pretty well.
                 </p>
               </div>
             </div>
             <div id="cktl" class="hide">
-              <iframe
-                src="https://www.youtube.com/embed/9bdG4divnjs"
-                title="YouTube video player"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
+              <img src="cocktail-finder.png" alt="cocktail-finder" />
               <div class="prjct-info">
-                <p>Name: Cocktail Finder</p>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://cocktail-finder.herokuapp.com/"
-                  >Demo</a
-                >
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/rayvongregory/drink-finder"
-                  >Git Repo</a
-                >
-                <p>Tech used: HTML, CSS, Vanilla JS</p>
+                <p>Cocktail Finder</p>
+                <p>HTML, CSS, JS</p>
+                <div class="links">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://cocktail-finder.herokuapp.com/"
+                    >Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/rayvongregory/drink-finder"
+                    >Git Repo</a
+                  >
+                </div>
                 <p>
                   This is the first project I made that uses data from an API. I
                   got the inspiration for this project from
@@ -226,17 +213,21 @@
                     href="https://www.themealdb.com/api.php"
                     >MealDB API</a
                   >
-                  in their video so I searched for other free data I could use
-                  and found the
+                  in their video which motivated me to search for free data I
+                  could use. The
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.thecocktaildb.com/api.php"
                     >CocktailDB API</a
-                  >. This is a super simple project but this is the one that got
-                  me over my irrational fear of APIs. And this is the project
-                  that made me curious about back-end technologies and
-                  frameworks, which took my skills to all new heights.
+                  >
+                  is just as user-friendly as the MealDB API but it's
+                  different-enough that I didn't feel like I was simply copying
+                  the tutorial. <br /><br />
+                  Fun fact: Although it doesn't look like much, this is the
+                  project that got me over my irrational fear of APIs. It's also
+                  partially responsible for me wanting to learn more about
+                  back-end technologies and frameworks.
                 </p>
               </div>
             </div>
@@ -248,17 +239,16 @@
                 allowfullscreen
               ></iframe>
               <div class="prjct-info">
-                <p>Name: Math Camp</p>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://math-camp.herokuapp.com/"
-                  >Demo</a
-                >
-                <p>
-                  Tech used: HTML(EJS), CSS, Vanilla JavaScript, Node.js,
-                  Express.js, MongoDB/Mongoose
-                </p>
+                <p>Math Camp</p>
+                <p>HTML(EJS), CSS, JS, Node, Express, MongoDB</p>
+                <div class="links">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://math-camp.herokuapp.com/"
+                    >Demo</a
+                  >
+                </div>
                 <p>
                   This is my first full-stack project and it was inspired by my
                   time as a teacher. During that time, I used several
@@ -267,21 +257,21 @@
                   wishing that there was just one app that had everything I
                   wanted. I wanted something with large, adaptive problem sets
                   like the ones on IXL, with articles and videos like Khan
-                  Academy, and a chat feature like Google Classroom. So I made
-                  one with the help of John Smilga aka Coding Addict's
+                  Academy, and a chat feature like Google Classroom. With the
+                  help of John Smilga aka Coding Addict's
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.udemy.com/course/nodejs-tutorial-and-projects-course/?referralCode=E94792BEAE9ADD204BC7"
                     >Node.js course</a
-                  >. <br /><br />
+                  >, I brought that idea to life. <br /><br />
                   This app tested me. Along with the technologies I mentioned
                   above and John Smilga's incredible video lessons, I spent
                   many, many, many hours reading documentation and implementing
                   other packages in this project before I found a few I really
-                  liked. I even had to reach out to other devs on GitHub and on
-                  Twitter from help from time to time, which really took me out
-                  of my confort zone.
+                  liked. I even had to reach out to other developers on GitHub
+                  and on Twitter for help from time to time, which really took
+                  me out of my comfort zone.
                 </p>
               </div>
             </div>
@@ -289,7 +279,7 @@
         </section>
         <section id="contact" class="card">
           <div class="card___head">
-            <h2>.contact-info</h2>
+            <h2>My Info</h2>
           </div>
           <div class="card___body">
             <h3>Email</h3>
