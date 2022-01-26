@@ -68,15 +68,16 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1.25rem;
-    text-transform: lowercase;
-    font-style: italic;
-    font-size: 1rem;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 .links a {
     color: var(--neutralDark);
+    font-weight: 700;
+    text-transform: lowercase;
     text-decoration: none;
+    font-style: italic;
+    font-size: 1rem;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 .links a:hover {
