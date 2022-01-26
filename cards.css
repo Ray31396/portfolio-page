@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400&display=swap');
 
 *, *::before, *::after {
@@ -9,11 +9,10 @@
 }
 
 :root {
-    --neutralDark: #575B60;
     --neutral: #eeeeee;
+    --gray: #757575;
+    --neutralDark: #575B60;
     --black: #333333;
-    --olive: #757575;
-    --beige: #dbc29a;
     --offset: 60px;
     --boxShadow: 0 4px 0.5em rgba(0, 0, 0, 0.2);
 }
@@ -25,7 +24,6 @@ html {
 
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    background-color: var(--neutralLight);
 
 }
 
@@ -35,14 +33,14 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--olive);
+    background: radial-gradient(var(--neutral), 15%, var(--gray));
     color: var(--neutral);
     height: calc(100vh - var(--offset));
 }
 
 .hero___text {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .hero___text h1 {
@@ -53,7 +51,7 @@ body {
     width: fit-content;
     aspect-ratio: 1/1;
     background-color: var(--neutral);
-    color: var(--olive);
+    color: var(--gray);
     font-size: 5rem;
     border-radius: 50%;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -298,11 +296,6 @@ nav a:visited, nav a:link {
     text-align: center;
 }
 
-.sig {
-    font-weight: 700;
-    font-family: "Rock Salt", Arial, Helvetica, sans-serif;
-}
-
 ul {
     margin: 0.1em 0 0.7em 1em;
     list-style: none;
@@ -313,7 +306,7 @@ li + li {
 }
 
 .emph {
-    font-weight: 400;
+    font-weight: 300;
     font-style: italic;
 }
 
@@ -328,7 +321,6 @@ li + li {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    color: var(--accent);
 }
 
 .contact___top {
@@ -364,6 +356,10 @@ li + li {
         height: 275px;
     }
 
+    .hero___text {
+        gap: 1rem;
+    }
+
     nav {
         display: flex;
         position: sticky;
@@ -380,28 +376,27 @@ li + li {
         margin-bottom: 2rem;
     }
 
-    .nav___item {
+    nav a {
         position: relative;
+        min-width: unset;
         font-size: 1.3rem;
     }
 
-    .nav___item::after {
+    nav a::after {
         content: "";
         position: absolute;
         width: 0;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: -6px;
         height: 3px;
         border-radius: 5px;
-        background-color: var(--accent);
+        background-color: var(--neutralDark);
         transition: width 0.15s ease-in-out;
     }
 
-    .nav___item:hover::after {
+    nav a:hover::after {
         width: 80%;
-    }
-
-    .nav___item i {
-        display: none;
     }
 }
 
