@@ -51,7 +51,6 @@
 
 .prjct-info p:nth-of-type(2) {
     font-size: 1.1rem;
-
 }
 
 .prjct-info p:last-of-type {
@@ -95,7 +94,6 @@ iframe,
     .prjct-info {
         padding: 1rem 1rem 2rem;
     }
-    
 }
 
 @media (min-width: 1200px) {

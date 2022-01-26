@@ -60,13 +60,13 @@ body {
 
 .hero___text a {
     padding: 5px 15px;
-    border: 1.5px solid var(--neutral);
     font-size: 18px;
     white-space: nowrap;
-    color: var(--neutral);
+    color: var(--gray);
     text-decoration: none;
     pointer-events: all;
     cursor: pointer;
+    background-color: var(--neutral);
 }
 
 nav {
@@ -284,16 +284,11 @@ nav a:visited, nav a:link {
 }
 
 .card___body-bottom p:not(.greeting),
- .card___body-bottom ul {
+.card___body-bottom ul {
     display: block;
     max-width: 56ch;
     line-height: 1.75em;
     font-size: 1rem;
-}
-
-.greeting {
-    font-weight: 600;
-    text-align: center;
 }
 
 ul {
@@ -340,10 +335,6 @@ li + li {
             opacity: 1;
         }
     }
-    
-}
-
-@media (min-width: 320px) {
     
 }
 
