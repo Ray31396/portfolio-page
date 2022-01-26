@@ -33,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: radial-gradient(var(--neutral), 15%, var(--gray));
+    background-color: var(--gray);
     color: var(--neutral);
     height: calc(100vh - var(--offset));
 }
