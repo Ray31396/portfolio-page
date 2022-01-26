@@ -43,6 +43,10 @@ body {
     gap: 2rem;
 }
 
+.hero___text > * {
+    box-shadow: var(--boxShadow);
+}
+
 .hero___text h1 {
     display: grid;
     place-items: center;
@@ -112,7 +116,7 @@ nav a:visited, nav a:link {
     max-width: 250px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: var(--boxShadow);
     object-fit: cover;
 }
 
