@@ -9,8 +9,12 @@ const aboutHead = document.querySelector(".card___body-top"),
 
 Array.from(document.querySelectorAll(".pr-nums button")).forEach((btn) =>
   btn.addEventListener("pointerup", (e) => {
-    const { id } = e.target
+    const { target } = e
+    const { id } = target
     document.activeElement.blur()
+    let selectedBtn = document.querySelector(".pr-nums button.selected")
+    selectedBtn.classList.remove("selected")
+    target.classList.add("selected")
     let openedProject = document.querySelector(
       ".projects-flex-wrap > div[id]:not(div.hide)"
     )
