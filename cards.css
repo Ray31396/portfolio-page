@@ -45,6 +45,7 @@ body {
 
 .hero___text > * {
     box-shadow: var(--boxShadow);
+    color: var(--neutralDark);
 }
 
 .hero___text h1 {
@@ -55,11 +56,10 @@ body {
     width: fit-content;
     aspect-ratio: 1/1;
     background-color: var(--neutral);
-    color: var(--gray);
     font-size: 5rem;
     border-radius: 50%;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .hero___text a {
@@ -68,7 +68,6 @@ body {
     white-space: nowrap;
     font-size: 18px;
     font-weight: 500;
-    color: var(--neutralDark);
     background-color: var(--neutral);
     pointer-events: all;
     cursor: pointer;
